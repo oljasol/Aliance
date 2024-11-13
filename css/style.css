@@ -15,7 +15,9 @@ body {
   margin: auto;
 }
 .navbar {
-  position: relative;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
   display: flex;
   align-items: center;
   color: #fff;
@@ -24,6 +26,7 @@ body {
 }
 header {
   min-height: 100vh;
+  padding: 94px;
 }
 .header-image {
   background-image: url(../img/main_img.png);
