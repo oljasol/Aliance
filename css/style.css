@@ -23,6 +23,14 @@ body {
   color: #fff;
   height: 94px;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+  transition: background-color 0.2s ;
+} 
+.navbar-light {
+  background: #fff;
+  color: #292d33;
+}
+.navbar-light .header-logo-path {
+  fill: #292d33;
 }
 header {
   min-height: 100vh;
