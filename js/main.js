@@ -28,4 +28,33 @@ window.addEventListener('scroll', () => {this.scrollY >1 ? lightModeOn() : light
 mMenuToggle.addEventListener("click", (event) =>{
   event.preventDefault();
 menu.classList.contains("is-open") ? closeMenu() : openMenu();
-})
+});
+const swiper = new Swiper('.swiper', {
+  speed: 400,
+  slidesPerView: 5,
+  autoHeight: true,
+  loop: true,
+  navigation:{
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+      centeredSlides: true,
+      slidersOffsetBefore: -50
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    }
+  }
+});
