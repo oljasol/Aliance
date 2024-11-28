@@ -31,12 +31,11 @@ menu.classList.contains("is-open") ? closeMenu() : openMenu();
 });
 const swiper = new Swiper('.swiper', {
   speed: 400,
-  slidesPerView: 5,
+  slidesPerView: 1,
   autoHeight: true,
-  loop: true,
   navigation:{
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.slider-button-next',
+    prevEl: '.slider-button-prev',
   },
   breakpoints: {
     320: {
