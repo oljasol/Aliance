@@ -202,6 +202,7 @@ border: 1px solid rgba(235, 235, 240, 0.2) ;
   color: #292D33;
 }
 .steps {
+  min-height: 18rem;
   display: flex;
   list-style: none;
   padding: 0;
@@ -231,7 +232,6 @@ border: 1px solid rgba(235, 235, 240, 0.2) ;
   font-size: 28px;
   line-height: 160%;
   color: #292D33;
-  ;
   margin-top: 1.875rem;
   margin-bottom: .625rem;
 }
@@ -258,6 +258,13 @@ border: 1px solid rgba(235, 235, 240, 0.2) ;
   background:#5c8ee6;
   width: 2.5rem;
   margin-right: 1.25rem;
+}
+.slider-buttons-steps {
+  display: none;
+}
+.slider-button-steps-prev , .slider-button-steps-next {
+  background-color:#5c8ee6 ;
+ padding: 10px 15px;
 }
 @media(max-width: 1700px) {
   .header-nav {
@@ -324,6 +331,15 @@ border: 1px solid rgba(235, 235, 240, 0.2) ;
   align-items:center;
   justify-content: center;
   width: 100%;
+  }
+}
+@media(max-width: 1024px){
+  .slider-buttons-steps {
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+    align-items:center;
+    margin-top: 20px;
   }
 }
 @media(max-width: 992px){
