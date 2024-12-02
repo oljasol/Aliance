@@ -74,7 +74,7 @@ const swiperSteps = new Swiper('.swiper-steps', {
     576: {
       slidesPerView: 2,
       centeredSlides: true,
-      slidersOffsetBefore: -50
+     
     },
     768: {
       slidesPerView: 3,
